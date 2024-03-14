@@ -1,0 +1,133 @@
+.header {
+
+    background-color: var(--color-dark);
+
+    &__inner {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile-s {
+            height: 70px;
+        }
+
+        &--tablet {
+            background-color: var(--color-dark-alt);
+            height: 45px;
+        }
+    }
+    
+    &__logo {
+        &-image {
+            @include desktop {
+                width: 166px;
+                height: 27px;
+            }            
+
+            @include mobile-s {
+                width: 112px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__menu {
+
+        margin-left: auto;
+
+        &-list {
+            display: flex;
+            column-gap: 79px;
+
+            @include desktop {
+                column-gap: 33px;
+            }
+
+            // @include tablet {
+            //     column-gap: 72px;
+            // }
+
+            &--tablet {
+                justify-content: space-between;
+            }
+        }
+
+        &-item {
+            font-family: var(--font-family-alternate);
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--color-light);
+
+            @include hover {
+                color: var(--color-accent);
+            }                                      
+
+            @include mobile {
+                font-size: 14px;
+            }
+
+        }
+
+        &-link {
+
+            @include hover {
+                color: var(--color-accent);
+            }
+
+            // &:active {
+            //     color: var(--color-active);
+            // }
+
+            &:focus {
+                background-color: var(--color-focus) !important;
+                outline: none;
+            }    
+        }
+
+        &--tablet {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+    }
+
+    &__search {
+        margin-left: 196px;
+        @include flex-center;
+        color: var(--color-light);
+        border: none;
+        background-color: transparent;
+
+        @include hover {
+            cursor: pointer;
+            color: var(--color-accent);
+        }
+
+        @include desktop {
+            margin-left: 131px;
+        }
+
+        @include mobile-s {
+            margin-left: 0px;
+
+            &-ico {
+                @include square(20px)
+            }
+
+            background-size: contain;
+        }
+    }
+
+    &__burger {
+        @include flex-center;
+        color: var(--color-light);
+        border: none;
+        background-color: transparent;
+
+        @include hover {
+            cursor: pointer;
+            color: var(--color-accent);
+        }
+    }
+}
