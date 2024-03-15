@@ -78,7 +78,7 @@
         &::before {
             content: "";
             display: inline-block;
-            background-image: url(/images/icons/tel.svg);
+            background-image: url(../../images/icons/tel.svg);
             @include square(15px);
         }
     }
