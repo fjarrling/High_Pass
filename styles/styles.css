@@ -96,10 +96,6 @@ button {
   font: inherit;
 }
 
-button {
-  padding: 0px;
-}
-
 html {
   /**
     Пригодится в большинстве ситуаций
@@ -179,6 +175,13 @@ svg * {
   font-family: "TTFirsNeue";
   src: url("../fonts/TTFirsNeue-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TTFirsNeue";
+  src: url("../fonts/TTFirsNeue-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -354,16 +357,6 @@ h3 {
   font-size: 16px;
   color: var(--color-light);
 }
-@media (hover: hover) {
-  .header__menu-item:hover {
-    color: var(--color-accent);
-  }
-}
-@media (hover: none) {
-  .header__menu-item:active {
-    color: var(--color-accent);
-  }
-}
 @media (max-width: 767.98px) {
   .header__menu-item {
     font-size: 14px;
@@ -389,12 +382,13 @@ h3 {
 }
 .header__search {
   margin-left: 196px;
+  color: var(--color-light);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-light);
-  border: none;
+  padding: 0;
   background-color: transparent;
+  border: none;
 }
 @media (hover: hover) {
   .header__search:hover {
@@ -424,12 +418,13 @@ h3 {
   }
 }
 .header__burger {
+  color: var(--color-light);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-light);
-  border: none;
+  padding: 0;
   background-color: transparent;
+  border: none;
 }
 @media (hover: hover) {
   .header__burger:hover {
@@ -442,4 +437,93 @@ h3 {
     cursor: pointer;
     color: var(--color-accent);
   }
+}
+
+.mobile-overlay {
+  font-family: var(--font-family-alternate);
+  width: 100%;
+  height: calc(100vh - 70px);
+  max-height: 100%;
+  max-width: 100%;
+  margin: 70px 0 0;
+  padding: 18px 18px 36px;
+  border: none;
+  background-color: var(--color-dark);
+}
+.mobile-overlay__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-overlay__close-button {
+  padding: 0;
+  margin-bottom: 16px;
+  color: var(--color-light);
+  background-color: var(--color-gray-dark);
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (hover: hover) {
+  .mobile-overlay__close-button:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .mobile-overlay__close-button:active {
+    cursor: pointer;
+    color: var(--color-accent);
+  }
+}
+.mobile-overlay__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.mobile-overlay__item {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-light);
+}
+@media (hover: hover) {
+  .mobile-overlay__link:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .mobile-overlay__link:active {
+    color: var(--color-accent);
+  }
+}
+.mobile-overlay__link:focus {
+  background-color: var(--color-focus) !important;
+  outline: none;
+}
+.mobile-overlay__tel {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  margin-top: auto;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--color-accent);
+}
+.mobile-overlay__tel::before {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/tel.svg);
+  width: 15px;
+  aspect-ratio: 1;
+}
+.mobile-overlay::backdrop {
+  background: none;
 }/*# sourceMappingURL=styles.css.map */
