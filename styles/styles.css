@@ -442,7 +442,7 @@ h3 {
 .mobile-overlay {
   font-family: var(--font-family-alternate);
   width: 100%;
-  height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
   max-height: 100%;
   max-width: 100%;
   margin: 70px 0 0;
@@ -520,7 +520,7 @@ h3 {
 .mobile-overlay__tel::before {
   content: "";
   display: inline-block;
-  background-image: url(/images/tel.svg);
+  background-image: url(./images/tel.svg);
   width: 15px;
   aspect-ratio: 1;
 }
