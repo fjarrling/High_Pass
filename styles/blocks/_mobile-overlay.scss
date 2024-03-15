@@ -72,13 +72,13 @@
         column-gap: 3px;
         margin-top: auto;
         font-weight: 500;
-        line-height: 100%;
+        line-height: 1;
         color: var(--color-accent);
 
         &::before {
             content: "";
             display: inline-block;
-            background-image: url(./images/tel.svg);
+            background-image: url(/images/icons/tel.svg);
             @include square(15px);
         }
     }
