@@ -520,7 +520,7 @@ h3 {
 .mobile-overlay__tel::before {
   content: "";
   display: inline-block;
-  background-image: url(../../images/icons/tel.svg);
+  background-image: url(../../High_Pass/images/icons/tel.svg);
   width: 15px;
   aspect-ratio: 1;
 }
