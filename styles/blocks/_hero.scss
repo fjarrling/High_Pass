@@ -1,0 +1,57 @@
+.hero {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    &__container {
+        padding-top: 41px;
+        padding-bottom: 68px;
+    }
+
+    &__banner {
+        padding: 405px 60px 60px;
+        background-image: url(../../High_Pass/images/hero-banner-bg.jpg);
+        background-position: 0px -172px;
+        
+        &-body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+
+    &__photos {
+
+        &-title {
+            line-height: 1.04;
+            margin-bottom: 18px;
+        }
+
+        &-list {
+            display: grid;
+            grid-template: 300px 257px / 1fr 1fr;
+            gap: 30px;
+        }
+
+        &-item {
+            &--1 {
+                grid-column: -1 / 1;  
+            }
+
+        }
+
+        &-image {
+            object-fit: cover;
+
+            &--1 {
+                object-position: 0px -60px;
+            }
+
+            &--2 {
+                object-position: 0px -127px;
+            }
+        }
+    }
+}

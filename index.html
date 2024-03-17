@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="shortcut icon" type="image/svg" href="./images/icons/favicon.svg">
   <title>High Pass</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="header__inner container">
             <a href="" class="header__logo logo">
                 <img
-                src="./images/logo.svg"
+                src="./images/icons/logo.svg"
                 alt="High Pass"
                 class="logo__image header__logo-image"
                 width="190px"
@@ -40,7 +40,7 @@
                 </ul>
             </nav>
             <button class="header__search" type="button">
-                <span class="visually-hidden">Search</span>
+                <span class="visually-hidden">Поиск</span>
                 <svg class="header__search-ico" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.9113 22.8136L19.8536 18.3573C21.341 16.3763 22.1457 13.9543 22.1457 11.4068C22.1457 8.35737 20.9904 5.49807 18.9013 3.34219C16.8123 1.18631 14.0293 0 11.0728 0C8.11639 0 5.33342 1.19011 3.24434 3.34219C1.15157 5.49427 0 8.35737 0 11.4068C0 14.4524 1.15527 17.3193 3.24434 19.4714C5.33342 21.6273 8.1127 22.8136 11.0728 22.8136C13.5458 22.8136 15.8932 21.9847 17.8162 20.4562L22.8739 24.9086C22.902 24.9376 22.9354 24.9606 22.9721 24.9762C23.0088 24.9919 23.0482 25 23.088 25C23.1277 25 23.1671 24.9919 23.2038 24.9762C23.2406 24.9606 23.2739 24.9376 23.302 24.9086L24.9113 23.2546C24.9394 23.2257 24.9617 23.1913 24.9769 23.1535C24.9922 23.1156 25 23.0751 25 23.0341C25 22.9931 24.9922 22.9526 24.9769 22.9147C24.9617 22.8769 24.9394 22.8425 24.9113 22.8136ZM16.9193 17.4296C15.3543 19.0379 13.28 19.9238 11.0728 19.9238C8.86565 19.9238 6.79134 19.0379 5.22638 17.4296C3.66511 15.8174 2.80512 13.6805 2.80512 11.4068C2.80512 9.13303 3.66511 6.99236 5.22638 5.384C6.79134 3.77565 8.86565 2.88972 11.0728 2.88972C13.28 2.88972 15.358 3.77184 16.9193 5.384C18.4806 6.99616 19.3406 9.13303 19.3406 11.4068C19.3406 13.6805 18.4806 15.8212 16.9193 17.4296Z" fill="white"/>
                 </svg>
@@ -71,7 +71,7 @@
                     type="button"
                     onclick="mobileOverlay.showModal()"
             >
-                <span class="visually-hidden" >Open navigation menu</span>
+                <span class="visually-hidden" >Открыть навигационное меню</span>
                 <svg class="header__burger-ico" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="20" height="2" fill="white"/>
                     <rect y="8" width="20" height="2" fill="white"/>
@@ -81,13 +81,56 @@
             </button>
         </div>
     </header>
+
+    <main class="content">
+
+        <h1 class="visually-hidden">Студия High Pass</h1>
+
+        <section class="section container hero__container">
+            <div class="hero">
+                <h2 class="visually-hidden">Приветсвие</h2>
+                <div class="hero__banner">
+                    <div class="hero__banner-body">
+                        <p class="hero__banner-subtitle">
+                            Мастер-класс от Игоря Робова
+                        </p>
+                        <h3 class="hero__banner-title">
+                            Неоновый фотосет 2.0 <br>
+                            7 июля 20:00
+                        </h3>
+                        <button class="hero__banner-button button">
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                <div class="hero__photos">
+                    <h3 class="hero__photos-title">
+                        Работы участников предыдущего мастер-класса
+                    </h3>
+                    <ul class="hero__photos-list">
+                        <li class="hero__photos-item hero__photos-item--1">
+                            <img class="hero__photos-image hero__photos-image--1" src="./images/girl-photo-1.jpg" width="630" height="300" alt="Девушка стоит на фоне неоновых огней">
+                        </li>
+                        <li class="hero__photos-item hero__photos-item--2">
+                            <img class="hero__photos-image hero__photos-image--2" src="./images/girl-photo-2.jpg" width="300" height="257" alt="Девушка стоит на фоне неоновых огней">
+                        </li>
+                        <li class="hero__photos-item hero__photos-item--3">
+                            <img class="hero__photos-image hero__photos-image--3" src="./images/girl-photo-3.jpg" width="300" height="257" alt="Девушка стоит на фоне неоновых огней">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <dialog class="mobile-overlay visible-mobile-s" id="mobileOverlay">
         <div class="mobile-overlay__body">
             <form class="mobile-overlay__close-button-wrapper" method="dialog">
                 <button class="mobile-overlay__close-button cross-button"
                         type="submit"
                 >
-                <span class="visually-hidden">Close navigation menu </span>
+                <span class="visually-hidden">Закрыть навигационное меню</span>
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <rect x="1.58643" y="0.950012" width="10.8" height="0.9" transform="rotate(45 1.58643 0.950012)" fill="white"/>
                     <rect x="1.03223" y="8.58685" width="10.8" height="0.9" transform="rotate(-45 1.03223 8.58685)" fill="white"/>
