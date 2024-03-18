@@ -11,6 +11,7 @@
     &__form {
         display: flex;
         gap: 20px;
+        justify-content: space-between;
     }
 
     &__input {
@@ -19,6 +20,7 @@
         width: 474px;
 
         &::placeholder {
+            transition-duration: 0.2s;
             color: var(--color-gray);
 
         }

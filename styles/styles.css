@@ -866,6 +866,7 @@ h3 {
 .mailing__form {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
 .mailing__input {
   background-color: var(--color-dark-alt);
@@ -873,12 +874,15 @@ h3 {
   width: 474px;
 }
 .mailing__input::-moz-placeholder {
+  transition-duration: 0.2s;
   color: var(--color-gray);
 }
 .mailing__input:-ms-input-placeholder {
+  transition-duration: 0.2s;
   color: var(--color-gray);
 }
 .mailing__input::placeholder {
+  transition-duration: 0.2s;
   color: var(--color-gray);
 }
 @media (hover: hover) {
