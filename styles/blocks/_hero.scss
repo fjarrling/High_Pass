@@ -205,17 +205,17 @@
             &--3 {
                 @include desktop {
                     height: 186px;
-                    object-position: -30px 0px;
+                    // object-position: -30px 0px;
                 }
 
                 @include tablet {
                     height: 133px;
-                    object-position: -40px 0px;
+                    // object-position: -40px 0px;
                 }
 
                 @include mobile-s {
                     height: 105px;
-                    object-position: -16px 0px;
+                    // object-position: -16px 0px;
                 }
             }
         }

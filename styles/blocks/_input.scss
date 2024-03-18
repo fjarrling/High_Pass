@@ -1,0 +1,10 @@
+.input {
+    height: var(--button-height);
+    padding: 15px 23px;
+    border: none;
+
+    @include mobile {
+        --button-height:40px;
+        padding: 12px 23px;
+    }
+} 

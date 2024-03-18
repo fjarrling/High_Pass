@@ -2,18 +2,11 @@
     font-family: var(--font-family-alternate);
     width: 100%;
     height: calc(100dvh - 70px);
-    max-height: 100%;
     max-width: 100%;
     margin: 70px 0 0;
     padding: 18px 18px 36px;
     border: none;
     background-color: var(--color-dark);
-
-    // &:modal {
-    //     max-width: 100%;
-    //     max-height: calc(100vh - 70px);
-    //     height: calc(100vh - 70px);
-    // }
 
     &__body {
         height: 100%;
@@ -54,10 +47,6 @@
         @include hover {
             color: var(--color-accent);
         }
-
-        // &:active {
-        //     color: var(--color-active);
-        // }
 
         &:focus {
             background-color: var(--color-focus) !important;

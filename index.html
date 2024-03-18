@@ -84,9 +84,9 @@
 
         <h1 class="visually-hidden">Студия High Pass</h1>
 
-        <section class="section container hero__container">
-            <div class="hero">
-                <h2 class="visually-hidden">Приветсвие</h2>
+        <section class="section  hero__container">
+            <div class="hero container">
+                <h2 class="visually-hidden">Приветствие</h2>
                 <div class="hero__banner card-category" data-title="#мастеркласс">
                     <div class="hero__banner-body">
                         <p class="hero__banner-subtitle">
@@ -96,7 +96,7 @@
                             Неоновый фотосет 2.0 <br>
                             <time datetime="2024-07-07T20:00">7 июля 20:00</time>
                         </h3>
-                        <button class="hero__banner-button button">
+                        <button class="hero__banner-button button" type="button">
                             <span class="visually-hidden">Узнать больше</span>
                             Узнать больше
                         </button>
@@ -120,6 +120,39 @@
                                 width="300" height="257" alt="Девушка стоит на фоне неоновых огней">
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about__container">
+            <div class="about container">
+                <h2 class="about__title">О студии</h2>
+                <div class="about__body">
+                    <div class="about__text">
+                        <p>
+                        В рамках спецификации современных стандартов, интерактивные прототипы, инициированные исключительно синтетически, ограничены исключительно образом мышления. Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует от нас анализа соответствующих условий активизации! Следует отметить, что семантический разбор внешних противодействий фиксирует необходимость распределения внутренних резервов и ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения предполагает независимые способы реализации новых принципов формирования материально-технической и кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации являются только методом политического участия и нарушающими общечеловеческие нормы этики.
+                        </p>
+                    </div>
+                    <div class="about__content">
+                        <img class="about__image" src="./images/camera.jpg" alt="Фотография камеры Canon" width="630" height="255">
+                        <div class="mailing">
+                            <h3 class="mailing__title">Подписаться на рассылку</h3>
+                            <form class="mailing__form" action="/subscribe" method="post">
+                                <label class="mailing__label visually-hidden" for="email-input">E-mail:</label>
+                                <input
+                                class="mailing__input input"
+                                type="email"
+                                id="email-input"
+                                name="email"
+                                placeholder="Email"
+                                required
+                                />
+                                <button class="mailing__button button button--submit" type="submit">
+                                Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

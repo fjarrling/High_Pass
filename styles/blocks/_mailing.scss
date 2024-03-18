@@ -1,0 +1,37 @@
+.mailing {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-weight: 400;
+        line-height: 0.92;
+        margin-bottom: 16px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__input {
+        background-color: var(--color-dark-alt);
+        color: var(--color-white);
+        width: 474px;
+
+        &::placeholder {
+            color: var(--color-gray);
+
+        }
+
+        @include hover {
+            &::placeholder {
+                color: var(--color-accent);
+            }
+        }
+
+        &:focus {
+            outline: 1px solid var(--color-accent);
+        }
+
+    }
+}
