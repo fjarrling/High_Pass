@@ -1,0 +1,29 @@
+.about {
+    
+    color: var(--color-light);
+
+    &__container {
+        background-color: var(--color-dark);
+        padding-block: 30px 70px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+
+    &__title {
+        line-height: 1.5;
+    }
+
+    &__text {
+        color: var(--color-gray);
+        max-width: 630px;
+    }
+
+    &__image {
+        object-fit: cover;
+        margin-bottom: 25px;
+    }
+}
