@@ -1,0 +1,15 @@
+.button {
+    background-color: var(--color-accent);
+    padding: 15.5px 22px;
+    border: none;
+    color: var(--color-light);
+    font-weight: 700;
+
+    height: 50px;
+
+    @include mobile {
+        height: 40px;
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}

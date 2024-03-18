@@ -10,7 +10,31 @@
     @include mobile {
         --container-padding-x: 20px;
     }
+}
 
+.card-category {
+    position: relative;
+
+    &::after {
+        @include flex-center;
+
+        content: attr(data-title);
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 30px;
+        padding: 7px 15px;
+        background-color: var(--color-dark);
+        font-size: 14px;
+
+        @include mobile-s {
+            font-size: 12px;
+            top: 7px;
+            right: 7px;
+            height: 22px;
+            padding: 4px 7px;
+        }
+    }
 }
 
 .visually-hidden {

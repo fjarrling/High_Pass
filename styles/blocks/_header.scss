@@ -1,5 +1,4 @@
 .header {
-
     background-color: var(--color-dark);
 
     &__inner {
@@ -17,13 +16,13 @@
             height: 45px;
         }
     }
-    
+
     &__logo {
         &-image {
             @include desktop {
                 width: 166px;
                 height: 27px;
-            }            
+            }
 
             @include mobile-s {
                 width: 112px;
@@ -33,7 +32,6 @@
     }
 
     &__menu {
-
         margin-left: auto;
 
         &-list {
@@ -53,16 +51,14 @@
             font-family: var(--font-family-alternate);
             font-weight: 400;
             font-size: 16px;
-            color: var(--color-light);                                   
+            color: var(--color-light);
 
             @include mobile {
                 font-size: 14px;
             }
-
         }
 
         &-link {
-
             @include hover {
                 color: var(--color-accent);
             }
@@ -74,20 +70,19 @@
             &:focus {
                 background-color: var(--color-focus) !important;
                 outline: none;
-            }    
+            }
         }
 
         &--tablet {
             width: 100%;
             margin-left: 0px;
         }
-
     }
 
     &__search {
         margin-left: 196px;
         color: var(--color-light);
-        
+
         @include flex-center;
         @include reset-button;
 
@@ -104,7 +99,7 @@
             margin-left: 0px;
 
             &-ico {
-                @include square(20px)
+                @include square(20px);
             }
 
             background-size: contain;
