@@ -3,8 +3,18 @@
     padding: 15px 23px;
     border: none;
 
-    @include mobile {
+    @include mobile-s {
         --button-height:40px;
         padding: 12px 23px;
+    }
+
+    @include hover {
+        &::placeholder {
+            color: var(--color-accent);
+        }
+    }
+
+    &:focus {
+        outline: 1px solid var(--color-accent);
     }
 } 

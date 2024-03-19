@@ -1,0 +1,64 @@
+.request-form {
+
+    &__title {
+        font-weight: 400;
+        line-height: 0.92;
+        margin-bottom: 5px;
+        
+        @include mobile-s {
+            font-size: 18px;
+        }
+    }
+
+    &__description {
+        line-height: 1.37;
+        color: var(--color-gray-dark);
+        margin-bottom: auto;
+
+        @include tablet {
+            margin-bottom: 14px;
+        }
+
+        @include mobile-s {
+            font-size: 14px;
+        }
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 20px;
+
+        background-color: var(--color-gray-light);
+        color: var(--color-white);
+
+        &--comment {
+            height: calc(var(--button-height) * 3);
+        }
+
+        @include desktop {
+
+        }
+
+        @include mobile {
+
+        }
+
+        &::placeholder {
+            transition-duration: 0.2s;
+            color: var(--color-gray-dark);
+
+        }
+    }
+
+    @include tablet {
+        max-width: 466px;
+    }
+
+}

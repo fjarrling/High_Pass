@@ -20,10 +20,10 @@
             <nav class="header__menu hidden-tablet">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a href="" class="header__menu-link"> О студии</a>
+                        <a href="#О_Студии" class="header__menu-link"> О студии</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="" class="header__menu-link">Наши проекты</a>
+                        <a href="#Проекты" class="header__menu-link">Наши проекты</a>
                     </li>
                     <li class="header__menu-item">
                         <a href="" class="header__menu-link">Услуги</a>
@@ -32,7 +32,7 @@
                         <a href="" class="header__menu-link">Мастер-классы</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="" class="header__menu-link">Контакты</a>
+                        <a href="#Контакты" class="header__menu-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -51,10 +51,10 @@
             <nav class="header__menu header__menu--tablet hidden-mobile-s">
                 <ul class="header__menu-list header__menu-list--tablet">
                     <li class="header__menu-item header__menu-item--tablet">
-                        <a href="" class="header__menu-link header__menu-link--tablet"> О студии</a>
+                        <a href="#О_Студии" class="header__menu-link header__menu-link--tablet"> О студии</a>
                     </li>
                     <li class="header__menu-item  header__menu-item--tablet">
-                        <a href="" class="header__menu-link header__menu-link--tablet">Наши проекты</a>
+                        <a href="#Проекты" class="header__menu-link header__menu-link--tablet">Наши проекты</a>
                     </li>
                     <li class="header__menu-item  header__menu-item--tablet">
                         <a href="" class="header__menu-link header__menu-link--tablet">Услуги</a>
@@ -63,7 +63,7 @@
                         <a href="" class="header__menu-link header__menu-link--tablet">Мастер-классы</a>
                     </li>
                     <li class="header__menu-item  header__menu-item--tablet">
-                        <a href="" class="header__menu-link header__menu-link--tablet">Контакты</a>
+                        <a href="#Контакты" class="header__menu-link header__menu-link--tablet">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -124,9 +124,9 @@
             </div>
         </section>
 
-        <section class="section about__container">
+        <section class="section about__container" id="О_Студии">
             <div class="about container">
-                <h2 class="about__title">О студии</h2>
+                <h2 class="about__title section-title">О студии</h2>
                 <div class="about__body">
                     <div class="about__text">
                         <p>
@@ -157,9 +157,9 @@
             </div>
         </section>
 
-        <section class="section projects__container">
+        <section class="section projects__container" id="Проекты">
             <div class="projects container">
-                <h2 class="projects__title">Наши проекты</h2>
+                <h2 class="projects__title section-title">Наши проекты</h2>
                 <ul class="projects__list">
                     <li class="projects__item projects__item--1 card-category card-category--lowp" data-title="#пейзаж">
                         <a  class="projects__link projects__item-inner" href="">
@@ -212,7 +212,56 @@
             </div>
         </section>
 
+        <section class="section contacts__container" id="Контакты" >
+            <div class="contacts container">
+                <h2 class="contacts__title section-title">Контакты</h2>
+                <div class="contacts__body">
+                    <div class="contacts__map">
+                        <div class="contacts__map-overlay">
+                            <button class="contacts__map-overlay-close-button cross-button cross-button--contacts">
+                                <span class="visually-hidden">Закрыть</span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.58643" y="0.950012" width="10.8" height="0.9" transform="rotate(45 1.58643 0.950012)"
+                                        fill="white" />
+                                    <rect x="1.03223" y="8.58685" width="10.8" height="0.9" transform="rotate(-45 1.03223 8.58685)"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <h3 class="contacts__map-overlay-title">Студия «High pass»</h3>
+                            <p class="contacts__map-overlay-adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис № 82</p>
+                            <a href="tel:+749542423532" class="contacts__map-overlay-tel tel tel--contacts" rel="nofollow noopener noreferrer">
+                                +7 495 424-23-532
+                            </a>
+                        </div>
+                    </div>
+                    <form class="request-form" action="#" method="post">
+                        <div class="request-form-container">
+                            <h2 class="request-form__title">Оставить заявку</h2>
+                            <p class="request-form__description">
+                              Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки или другого мероприятия
+                            </p>
+                            <label class="request-form__label visually-hidden" for="name">Имя</label>
+                            <input class="request-form__input request-form__input--name input" type="text" id="name" name="name" placeholder="Имя" required>
+
+                            <label class="request-form__label visually-hidden" for="email">Email</label>
+                            <input class="request-form__input request-form__input--email input" type="email" id="email" name="email" placeholder="Email" required>
+
+                            <label class="request-form__label visually-hidden" for="comment">Комментарий</label>
+                            <textarea class="request-form__input request-form__input--comment input" id="comment" name="comment" rows="4" placeholder="Комментарий" required></textarea>
+
+                            <button class="request-form__button button" type="submit">Отправить</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer_inner container">
+            
+        </div>
+    </footer>
 
     <dialog class="mobile-overlay visible-mobile-s" id="mobileOverlay">
         <div class="mobile-overlay__body">
@@ -244,7 +293,7 @@
                     <a href="" class="mobile-overlay__link">Контакты</a>
                 </li>
             </ul>
-            <a href="tel:+749542423532" class="mobile-overlay__tel" rel="nofollow noopener noreferrer">
+            <a href="tel:+749542423532" class="mobile-overlay__tel tel" rel="nofollow noopener noreferrer">
                 +7 495 424-23-532
             </a>
         </div>

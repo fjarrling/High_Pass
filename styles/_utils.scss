@@ -49,6 +49,11 @@
     }
 }
 
+.section-title {
+        line-height: 1.5;
+        margin-bottom: 12px;
+}
+
 .visually-hidden {
     @include visually-hidden;
 }

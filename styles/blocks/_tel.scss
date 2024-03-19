@@ -1,0 +1,30 @@
+.tel {
+    height: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    margin-top: auto;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--color-accent);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(../../High_Pass/images/icons/tel.svg);
+        @include square(15px);
+
+
+    }
+
+    &--contacts {
+        font-weight: 400;
+        height: 20px;
+        
+        &::before {
+            @include square(16.5px);
+            background-repeat: no-repeat;
+        }
+    }
+}
+

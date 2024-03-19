@@ -1,11 +1,6 @@
 .projects {
     padding-block: 68px;
 
-    &__title {
-        line-height: 1.5;
-        margin-bottom: 12px;
-    }
-
     &__list {
         display: grid;
         grid-template: 300px 300px / repeat(12, 1fr);
@@ -130,6 +125,15 @@
                 @include mobile-s {
                     margin-bottom: 20px;
                 }
+            }
+
+            @include hover {
+                color: var(--color-accent);
+            }
+
+            &:focus {
+                background-color: var(--color-focus) !important;
+                outline: none;
             }
         }
 

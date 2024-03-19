@@ -42,16 +42,5 @@
             color: var(--color-gray);
 
         }
-
-        @include hover {
-            &::placeholder {
-                color: var(--color-accent);
-            }
-        }
-
-        &:focus {
-            outline: 1px solid var(--color-accent);
-        }
-
     }
 }

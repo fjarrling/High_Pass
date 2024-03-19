@@ -1,0 +1,21 @@
+.cross-button {
+    padding: 0;
+    margin-bottom: 16px;
+    color: var(--color-light);
+    background-color: var(--color-gray-dark);
+    border: none;
+    border-radius: 50%;
+    @include square(18px);
+    @include flex-center;
+    @include hover {
+        cursor: pointer;
+        color: var(--color-accent);
+    }
+
+    &--contacts {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+}
