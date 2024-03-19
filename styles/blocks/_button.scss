@@ -6,7 +6,6 @@
     font-weight: 700;
     line-height: 1;
 
-
     height: var(--button-height);
 
     &--submit {
@@ -23,9 +22,21 @@
         background-color: var(--color-active);
     }
 
-
     &:focus {
         outline: 3px solid var(--color-active);
     }
 
+    &--transparent {
+        background-color: transparent;
+        outline: 3px solid var(--color-accent);
+
+        @include hover {
+            background-color: var(--color-accent);
+        }
+
+        &:focus {
+            background-color: var(--color-focus)
+        }
+
+    }
 }

@@ -1,0 +1,175 @@
+.projects {
+    padding-block: 68px;
+
+    &__title {
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template: 300px 300px / repeat(12, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "one one two two three three four four four four four four "
+            "five five five five five five six six six seven seven seven";
+
+        @include desktop {
+            grid-template: 285px 307px 307px / repeat(8, 1fr);
+            grid-template-areas:
+                "one one two two three three three three"
+                "four four four four four six six six"
+                "seven seven seven five five five five five";
+        }
+
+        @include tablet {
+            grid-template: repeat(4, 300px) / repeat(6, 1fr);
+            grid-template-areas:
+                "one one two two three three"
+                "four four four four four four "
+                "six six six seven seven seven "
+                "five five five five five five";
+        }
+
+        @include mobile-s {
+            row-gap: 25px;
+            grid-template: 300px 300px 300px 422px 300px 300px 422px / 1fr;
+            grid-template-areas: "one" "two" "three" "four" "six" "seven" "five";
+        }
+    }
+
+    &__item {
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        &--1 {
+            grid-area: one;
+        }
+
+        &--2 {
+            grid-area: two;
+        }
+
+        &--3 {
+            grid-area: three;
+        }
+
+        &--4 {
+            grid-area: four;
+            background: url(../../High_Pass/images/projects/project-4.jpg);
+        }
+
+        &--5 {
+            grid-area: five;
+            background: url(../../High_Pass/images/projects/project-5.jpg);
+        }
+
+        &--6 {
+            grid-area: six;
+        }
+
+        &--7 {
+            grid-area: seven;
+        }
+
+        &--wide {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: var(--color-light);
+            padding: 30px 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include mobile-s {
+                justify-content: flex-end;
+                background-position: center;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            // justify-content: space-between;
+            height: 100%;
+        }
+
+        &-title {
+            line-height: 1;
+            max-width: 292px;
+            margin-bottom: 6px;
+        }
+
+        &-image {
+            margin-bottom: 18px;
+        }
+
+        &-description {
+            line-height: 1.37;
+            margin-bottom: auto;
+            @include line-clamp(3);
+
+            &--small {
+                @include desktop {
+                    @include line-clamp(2);
+                }
+
+                @include tablet {
+                    @include line-clamp(3);
+                }
+            }
+
+            &--wide {
+                font-weight: 300;
+                max-width: 292px;
+                @include line-clamp(4);
+
+                @include mobile-s {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &-button {
+            margin-top: auto;
+
+            @include mobile-s {
+                margin-top: 0;
+            }
+        }
+
+        &-time {
+            font-size: 12px;
+            line-height: 1;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            column-gap: 3px;
+            color: var(--color-gray-dark);
+
+            &::before {
+                content: "";
+                display: inline-block;
+                background-image: url(../../High_Pass/images/icons/calendar-gray.svg);
+                background-repeat: no-repeat;
+                @include square(14px);
+            }
+
+            &--white {
+                margin-bottom: 2px;
+                color: var(--color-light);
+
+                @include mobile-s {
+                    margin-bottom: 6px;
+                }
+
+                &::before {
+                    background-image: url(../../High_Pass/images/icons/calendar.svg);
+                }
+            }
+        }
+    }
+}

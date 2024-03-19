@@ -2,6 +2,14 @@
     font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
 }
 
+@mixin line-clamp ($max: 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $max;
+    -webkit-box-orient: vertical;
+}
+
 @mixin reset-link {
     color: inherit;
     
