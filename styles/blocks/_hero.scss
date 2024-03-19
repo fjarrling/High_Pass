@@ -159,14 +159,13 @@
 
         &-image {
             object-fit: cover;
-            // object-position: center;
 
             &--1 {
-                object-position: 0px -60px;
+                // object-position: 0px -60px;
 
                 @include desktop {
                     height: 332px;
-                    object-position: 0px 0px;
+                    // object-position: 0px 0px;
                 }
 
                 @include tablet {
@@ -175,30 +174,31 @@
 
                 @include mobile-s {
                     height: 186px;
-                    object-position: 0px 0px;
+                    // object-position: 0px 0px;
                 }
             }
 
             &--2 {
-                object-position: 0px -127px;
+                // height: clamp(105px, 22vw, 257px);
+                // object-position: center center ;
 
                 @include desktop {
                     height: 186px;
-                    object-position: 0px -70px;
+                    // object-position: 0px -70px;
                 }
 
                 @include tablet {
                     height: 133px;
-                    object-position: 0px -51px;
+                    // object-position: 0px -51px;
                 }
 
-                @include mobile {
-                    object-position: 0px -20px;
-                }
+                // @include mobile {
+                    // object-position: 0px -20px;
+                // }
 
                 @include mobile-s {
                     height: 105px;
-                    object-position: 0px -41px;
+                    // object-position: 0px -41px;
                 }
             }
 
