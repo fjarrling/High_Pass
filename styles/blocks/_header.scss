@@ -17,20 +17,6 @@
         }
     }
 
-    &__logo {
-        &-image {
-            @include desktop {
-                width: 166px;
-                height: 27px;
-            }
-
-            @include mobile-s {
-                width: 112px;
-                height: 18px;
-            }
-        }
-    }
-
     &__menu {
         margin-left: auto;
 
