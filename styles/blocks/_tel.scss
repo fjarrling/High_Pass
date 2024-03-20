@@ -1,12 +1,12 @@
 .tel {
-    height: 18px;
     display: flex;
     align-items: center;
     column-gap: 3px;
     margin-top: auto;
+    height: 18px;
+    color: var(--color-accent);
     font-weight: 500;
     line-height: 1;
-    color: var(--color-accent);
 
     &::before {
         content: "";
@@ -18,12 +18,13 @@
     }
 
     &--contacts {
-        font-weight: 400;
         height: 20px;
+        font-weight: 400;
         
         &::before {
-            @include square(16.5px);
             background-repeat: no-repeat;
+            
+            @include square(16.5px);
         }
     }
 }

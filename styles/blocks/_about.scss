@@ -3,8 +3,8 @@
     color: var(--color-light);
 
     &__container {
-        background-color: var(--color-dark);
         padding-block: 30px 60px;
+        background-color: var(--color-dark);
     }
 
     &__body {
@@ -19,17 +19,17 @@
     }
 
     &__title {
-        line-height: 1.5;
         margin-bottom: 5px;
+        line-height: 1.5;
     }
 
     &__text {
         color: var(--color-gray);
 
         @include mobile {
+            margin-bottom: 18px;
             font-size: 14px;
             line-height: 1.79;
-            margin-bottom: 18px;
         }
     }
 

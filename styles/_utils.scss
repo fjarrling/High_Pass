@@ -22,18 +22,18 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        height: 30px;
         padding: 7px 15px;
+        height: 30px;
         background-color: var(--color-dark);
         color: var(--color-light);
         font-size: 14px;
 
         @include mobile-s {
-            font-size: 12px;
             top: 7px;
             right: 7px;
             height: 22px;
             padding: 4px 7px;
+            font-size: 12px;
         }
     }
 
@@ -42,16 +42,16 @@
         right: 7px;
         padding: 6px 14px;
         @include mobile-s {
-            padding: 0px 14px;
             top: 5px;
             right: 5px;
+            padding: 0px 14px;
         }
     }
 }
 
 .section-title {
-        line-height: 1.5;
         margin-bottom: 12px;
+        line-height: 1.5;
 }
 
 .visually-hidden {

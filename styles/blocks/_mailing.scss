@@ -3,21 +3,21 @@
     flex-direction: column;
 
     &__title {
+        margin-bottom: 16px;
         font-weight: 400;
         line-height: 0.92;
-        margin-bottom: 16px;
 
         @include mobile {
+            margin-bottom: 14px;
             font-size: 18px;
             line-height: 1.22;
-            margin-bottom: 14px;
         }
     }
 
     &__form {
         display: flex;
-        gap: 20px;
         justify-content: space-between;
+        gap: 20px;
 
         @include desktop {
             flex-direction: column;
@@ -25,9 +25,9 @@
     }
 
     &__input {
+        width: 474px;
         background-color: var(--color-dark-alt);
         color: var(--color-white);
-        width: 474px;
 
         @include desktop {
             width: 342px;
@@ -38,9 +38,7 @@
         }
 
         &::placeholder {
-            transition-duration: 0.2s;
             color: var(--color-gray);
-
         }
     }
 }

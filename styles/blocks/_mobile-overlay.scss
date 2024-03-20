@@ -1,18 +1,18 @@
 .mobile-overlay {
-    font-family: var(--font-family-alternate);
-    width: 100%;
-    height: calc(100dvh - 70px);
-    max-width: 100%;
     margin: 70px 0 0;
     padding: 18px 18px 36px;
     border: none;
+    width: 100%;
+    height: calc(100dvh - 70px);
+    max-width: 100%;
     background-color: var(--color-dark);
+    font-family: var(--font-family-alternate);
 
     &__body {
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 100%;
     }
 
     &__list {
@@ -23,9 +23,9 @@
     }
 
     &__item {
+        color: var(--color-light);
         font-weight: 400;
         font-size: 16px;
-        color: var(--color-light);
     }
 
     &__link {

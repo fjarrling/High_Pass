@@ -47,11 +47,11 @@
         }
 
         &-body {
-            margin-top: auto;
-            padding: 60px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin-top: auto;
+            padding: 60px;
 
             @include desktop {
                 padding: 30px;
@@ -76,13 +76,13 @@
         }
 
         &-title {
-            font-size: 36px;
             margin-bottom: 19px;
+            font-size: 36px;
 
             @include desktop {
+                margin-bottom: 22px;
                 font-size: 34px;
                 line-height: 1;
-                margin-bottom: 22px;
             }
 
             @include tablet {
@@ -108,19 +108,17 @@
     }
 
     &__photos {
-        // overflow: hidden;
-
         &-title {
-            line-height: 1.04;
             margin-bottom: 18px;
+            line-height: 1.04;
 
             @include desktop {
                 margin-bottom: 25px;
             }
 
             @include tablet {
-                font-size: 22px;
                 margin-bottom: 17px;
+                font-size: 22px;
             }
 
             @include mobile {
@@ -128,8 +126,8 @@
             }
 
             @include mobile-s {
-                font-size: 18px;
                 margin-bottom: 16px;
+                font-size: 18px;
             }
         }
 
@@ -159,7 +157,6 @@
 
         &-image {
             object-fit: cover;
-            transition: transform .3s ease-in-out;
 
             &--1 {
                 // object-position: 0px -60px;

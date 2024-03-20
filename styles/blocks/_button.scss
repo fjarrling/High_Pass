@@ -1,12 +1,12 @@
 .button {
-    background-color: var(--color-accent);
+
+    height: var(--button-height);
     padding: 15.5px 22px;
     border: none;
     color: var(--color-light);
     font-weight: 700;
     line-height: 1;
-
-    height: var(--button-height);
+    background-color: var(--color-accent);
 
     &--submit {
         width: 126px;
