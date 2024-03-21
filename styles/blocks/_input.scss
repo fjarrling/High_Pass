@@ -3,9 +3,18 @@
     padding: 15px 23px;
     border: none;
 
+    &--textarea {
+        line-height: 1.29;
+    }
+
     @include mobile-s {
         --button-height: 40px;
+        
         padding: 12px 23px;
+
+        &::placeholder {
+            font-size: 14px;
+        }
     }
 
     @include hover {

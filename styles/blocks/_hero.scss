@@ -23,23 +23,26 @@
 
     &__banner {
         display: flex;
-        background-image: url(../../High_Pass/images/hero-banner-bg.jpg);
+        background-image: url(../../images/hero-banner-bg.jpg);
         background-position: 0px -172px;
         background-size: cover;
         background-repeat: no-repeat;
-        color: var(--color-light);
         line-height: 1.04;
+        color: var(--color-light);
+        
 
         @include desktop {
-            background-position: 0px -25px;
+            background-position: 0px -33px;
         }
 
         @include tablet {
-            background-position: 0px -48px;
+            background-position: 0px -50px;
+            margin-top: 2px;
         }
 
         @include mobile {
-            background-position: 0px 0px;
+            background-position: -4px 0px;
+            margin-top: 0px;
         }
 
         @include mobile-s {
@@ -60,6 +63,7 @@
 
         &-subtitle {
             margin-bottom: 3px;
+            line-height: 1;
 
             @include desktop {
                 margin-bottom: 9px;
@@ -99,7 +103,7 @@
         }
 
         &-button {
-            width: 160px;
+            width: 159px;
 
             @include mobile-s {
                 width: 145px;
@@ -126,6 +130,7 @@
             }
 
             @include mobile-s {
+                height: 38px;
                 margin-bottom: 16px;
                 font-size: 18px;
             }
@@ -159,11 +164,10 @@
             object-fit: cover;
 
             &--1 {
-                // object-position: 0px -60px;
 
                 @include desktop {
                     height: 332px;
-                    // object-position: 0px 0px;
+                    object-position: 0px 0px;
                 }
 
                 @include tablet {
@@ -172,48 +176,39 @@
 
                 @include mobile-s {
                     height: 186px;
-                    // object-position: 0px 0px;
                 }
             }
 
             &--2 {
-                // height: clamp(105px, 22vw, 257px);
-                // object-position: center center ;
+                object-position: 0 -127px;
 
                 @include desktop {
                     height: 186px;
-                    // object-position: 0px -70px;
+                    object-position: 0px -70px;
                 }
 
                 @include tablet {
                     height: 133px;
-                    // object-position: 0px -51px;
+                    object-position: 0px -50px;
                 }
-
-                // @include mobile {
-                    // object-position: 0px -20px;
-                // }
 
                 @include mobile-s {
                     height: 105px;
-                    // object-position: 0px -41px;
+                    object-position: 0px -41px;
                 }
             }
 
             &--3 {
                 @include desktop {
                     height: 186px;
-                    // object-position: -30px 0px;
                 }
 
                 @include tablet {
                     height: 133px;
-                    // object-position: -40px 0px;
                 }
 
                 @include mobile-s {
                     height: 105px;
-                    // object-position: -16px 0px;
                 }
             }
 

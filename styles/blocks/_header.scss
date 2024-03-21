@@ -34,10 +34,10 @@
         }
 
         &-item {
-            color: var(--color-light);
             font-family: var(--font-family-alternate);
             font-weight: 400;
             font-size: 16px;
+            color: var(--color-light);
 
             @include mobile {
                 font-size: 14px;
@@ -56,13 +56,13 @@
         }
 
         &--tablet {
-            margin-left: 0px;
             width: 100%;
+            margin-left: 0px;
         }
     }
 
     &__search {
-        margin-left: 196px;
+        margin-left: 193px;
         color: var(--color-light);
 
         @include flex-center;
@@ -84,16 +84,15 @@
             &-ico {
                 @include square(20px);
             }
-
-
         }
     }
 
     &__burger {
         color: var(--color-light);
-        
+
         @include flex-center;
         @include reset-button;
+        
         @include hover {
             cursor: pointer;
             color: var(--color-accent);

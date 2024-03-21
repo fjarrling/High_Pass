@@ -1,19 +1,23 @@
 .button {
-
     height: var(--button-height);
-    padding: 15.5px 22px;
-    border: none;
-    color: var(--color-light);
+    padding-block: 15.5px;
     font-weight: 700;
     line-height: 1;
+    color: var(--color-light);
     background-color: var(--color-accent);
+    border: none;
 
     &--submit {
         width: 126px;
+
+        @include mobile-s {
+            width: 115px;
+        }
     }
 
-    @include mobile {
+    @include mobile-s {
         --button-height: 40px;
+
         padding: 12px 22px;
         font-size: 14px;
     }
@@ -27,16 +31,22 @@
     }
 
     &--transparent {
+        width: 121px;
         background-color: transparent;
-        outline: 3px solid var(--color-accent);
+        border: 3px solid var(--color-accent);
+
+        @include mobile-s {
+            width: 109px;
+            padding: 12px;
+        }
 
         @include hover {
             background-color: var(--color-accent);
         }
 
         &:focus {
-            background-color: var(--color-focus)
+            background-color: var(--color-focus);
+            outline: none;
         }
-
     }
 }

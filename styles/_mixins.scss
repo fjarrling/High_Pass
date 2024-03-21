@@ -3,9 +3,9 @@
 }
 
 @mixin line-clamp ($max: 1) {
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-line-clamp: $max;
     -webkit-box-orient: vertical;
 }

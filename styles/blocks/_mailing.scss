@@ -26,15 +26,15 @@
 
     &__input {
         width: 474px;
-        background-color: var(--color-dark-alt);
         color: var(--color-white);
+        background-color: var(--color-dark-alt);
 
         @include desktop {
             width: 342px;
         }
 
         @include mobile {
-            width: 280px;
+            width: 278px;
         }
 
         &::placeholder {

@@ -4,11 +4,11 @@
     padding-inline: var(--container-padding-x);
 
     @include tablet {
-        --container-padding-x: 28px;
+        --container-padding-x: 27px;
     }
 
     @include mobile {
-        --container-padding-x: 20px;
+        --container-padding-x: 21px;
     }
 }
 
@@ -22,16 +22,19 @@
         position: absolute;
         top: 15px;
         right: 15px;
-        padding: 7px 15px;
         height: 30px;
-        background-color: var(--color-dark);
-        color: var(--color-light);
+        width: 123px;
+        padding: 7px 15px 7px 14px;
         font-size: 14px;
+        line-height: 1.5;
+        color: var(--color-light);
+        background-color: var(--color-dark);
 
         @include mobile-s {
-            top: 7px;
-            right: 7px;
+            top: 6px;
+            right: 5px;
             height: 22px;
+            width: 95px;
             padding: 4px 7px;
             font-size: 12px;
         }
@@ -40,18 +43,26 @@
     &--lowp::after {
         top: 7px;
         right: 7px;
+        width: auto;
+        height: 28px;
         padding: 6px 14px;
+
+        @include desktop {
+            right: 8px;
+        }
+
+        @include tablet {
+            right: 7px;
+        }
+
         @include mobile-s {
             top: 5px;
             right: 5px;
-            padding: 0px 14px;
+            width: auto;
+            height: 22px;
+            padding: 4px 14px;
         }
     }
-}
-
-.section-title {
-        margin-bottom: 12px;
-        line-height: 1.5;
 }
 
 .visually-hidden {
