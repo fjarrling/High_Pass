@@ -116,7 +116,7 @@
 
         &--4 {
             grid-area: four;
-            background: url(../../images/projects/project-4.jpg);
+            background: url(../images/projects/project-4.jpg);
             background-position: 0px -85px;
 
             time {
@@ -154,7 +154,7 @@
 
         &--5 {
             grid-area: five;
-            background: url(../../images/projects/project-5.jpg);
+            background: url(.././images/projects/project-5.jpg);
             background-position: 0px -60px;
 
             p {
@@ -285,7 +285,7 @@
             &::before {
                 content: "";
                 display: inline-block;
-                background-image: url(../../images/icons/calendar-gray.svg);
+                background-image: url(/images/icons/calendar-gray.svg);
                 background-repeat: no-repeat;
                 
                 @include square(14px);
@@ -300,7 +300,7 @@
                 }
 
                 &::before {
-                    background-image: url(../../images/icons/calendar.svg);
+                    background-image: url(/images/icons/calendar.svg);
                 }
             }
         }

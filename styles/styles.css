@@ -534,7 +534,7 @@ h3 {
 .tel::before {
   content: "";
   display: inline-block;
-  background-image: url(../../images/icons/tel.svg);
+  background-image: url(/images/icons/tel.svg);
   width: 15px;
   aspect-ratio: 1;
 }
@@ -1221,7 +1221,7 @@ h3 {
 }
 .projects__item--4 {
   grid-area: four;
-  background: url(../../images/projects/project-4.jpg);
+  background: url(../images/projects/project-4.jpg);
   background-position: 0px -85px;
 }
 @media (max-width: 767.98px) {
@@ -1257,7 +1257,7 @@ h3 {
 }
 .projects__item--5 {
   grid-area: five;
-  background: url(../../images/projects/project-5.jpg);
+  background: url(.././images/projects/project-5.jpg);
   background-position: 0px -60px;
 }
 @media (max-width: 580.98px) {
@@ -1406,7 +1406,7 @@ h3 {
 .projects__item-time::before {
   content: "";
   display: inline-block;
-  background-image: url(../../images/icons/calendar-gray.svg);
+  background-image: url(/images/icons/calendar-gray.svg);
   background-repeat: no-repeat;
   width: 14px;
   aspect-ratio: 1;
@@ -1421,7 +1421,7 @@ h3 {
   }
 }
 .projects__item-time--white::before {
-  background-image: url(../../images/icons/calendar.svg);
+  background-image: url(/images/icons/calendar.svg);
 }
 
 .request-form__title {
@@ -1527,7 +1527,7 @@ h3 {
 }
 .contacts__map {
   height: 460px;
-  background-image: url(../../images/map.jpg);
+  background-image: url(/images/map.jpg);
 }
 .contacts__map-overlay {
   position: relative;
