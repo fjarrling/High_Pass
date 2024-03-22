@@ -35,7 +35,7 @@
 
     &__map {
         height: 460px;
-        background-image: url(/images/map.jpg);
+        background-image: url(../images/map.jpg);
 
         &-overlay {
             position: relative;
@@ -79,7 +79,10 @@
             }
 
             &-tel {
+                height: 21px;
                 margin-left: 2px;
+                font-family: 'TTFirsNeue';
+                font-weight: 400;
 
                 @include desktop {
                     position: absolute;

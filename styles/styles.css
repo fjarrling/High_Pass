@@ -534,16 +534,11 @@ h3 {
 .tel::before {
   content: "";
   display: inline-block;
-  background-image: url(/images/icons/tel.svg);
+  background-image: url(../images/icons/tel.svg);
   width: 15px;
   aspect-ratio: 1;
 }
-.tel--contacts {
-  height: 21px;
-  font-family: "TTFirsNeue";
-  font-weight: 400;
-}
-.tel--contacts::before {
+.tel::before {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -773,7 +768,7 @@ h3 {
 }
 .hero__banner {
   display: flex;
-  background-image: url(../../images/hero-banner-bg.jpg);
+  background-image: url(../images/hero-banner-bg.jpg);
   background-position: 0px -172px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1257,7 +1252,7 @@ h3 {
 }
 .projects__item--5 {
   grid-area: five;
-  background: url(.././images/projects/project-5.jpg);
+  background: url(../images/projects/project-5.jpg);
   background-position: 0px -60px;
 }
 @media (max-width: 580.98px) {
@@ -1406,7 +1401,7 @@ h3 {
 .projects__item-time::before {
   content: "";
   display: inline-block;
-  background-image: url(/images/icons/calendar-gray.svg);
+  background-image: url(../images/icons/calendar-gray.svg);
   background-repeat: no-repeat;
   width: 14px;
   aspect-ratio: 1;
@@ -1421,7 +1416,7 @@ h3 {
   }
 }
 .projects__item-time--white::before {
-  background-image: url(/images/icons/calendar.svg);
+  background-image: url(../images/icons/calendar.svg);
 }
 
 .request-form__title {
@@ -1527,7 +1522,7 @@ h3 {
 }
 .contacts__map {
   height: 460px;
-  background-image: url(/images/map.jpg);
+  background-image: url(../images/map.jpg);
 }
 .contacts__map-overlay {
   position: relative;
@@ -1573,7 +1568,10 @@ h3 {
   }
 }
 .contacts__map-overlay-tel {
+  height: 21px;
   margin-left: 2px;
+  font-family: "TTFirsNeue";
+  font-weight: 400;
 }
 @media (max-width: 1280px) {
   .contacts__map-overlay-tel {
