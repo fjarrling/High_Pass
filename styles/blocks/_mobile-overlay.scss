@@ -1,45 +1,45 @@
 .mobile-overlay {
-    width: 100%;
-    height: calc(100dvh - 70px);
-    max-width: 100%;
-    margin: 70px 0 0;
-    padding: 18px 18px 36px;
-    font-family: var(--font-family-alternate);
-    background-color: var(--color-dark);
-    border: none;
+  width: 100%;
+  height: calc(100dvh - 70px);
+  max-width: 100%;
+  margin: 70px 0 0;
+  padding: 18px 18px 36px;
+  font-family: var(--font-family-alternate);
+  background-color: var(--color-dark);
+  border: none;
 
-    &__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-light);
+  }
+
+  &__link {
+    @include hover {
+      color: var(--color-accent);
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        row-gap: 30px;
+    &:focus {
+      background-color: var(--color-focus) !important;
+      outline: none;
     }
+  }
 
-    &__item {
-        font-weight: 400;
-        font-size: 16px;
-        color: var(--color-light);
-    }
-
-    &__link {
-        @include hover {
-            color: var(--color-accent);
-        }
-
-        &:focus {
-            background-color: var(--color-focus) !important;
-            outline: none;
-        }
-    }
-    
-    &::backdrop {
-        background: none;
-    }
+  &::backdrop {
+    background: none;
+  }
 }

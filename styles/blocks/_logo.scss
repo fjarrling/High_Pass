@@ -1,13 +1,13 @@
 .logo {
-    img {
-        @include desktop {
-            width: 166px;
-            height: 26.79px;
-        }
-
-        @include mobile-s {
-            width: 111.55px;
-            height: 18px;
-        }
+  img {
+    @include desktop {
+      width: 166px;
+      height: 26.79px;
     }
+
+    @include mobile-s {
+      width: 111.55px;
+      height: 18px;
+    }
+  }
 }

@@ -1,308 +1,304 @@
 .projects {
-    padding-block: 68px;
+  padding-block: 68px;
+
+  @include mobile-s {
+    padding-block: 50px 34px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    line-height: 1.292;
 
     @include mobile-s {
-        padding-block: 50px 34px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 30px;
+    grid-template: 300px 300px / repeat(12, 1fr);
+    grid-template-areas:
+      'one one two two three three four four four four four four '
+      'five five five five five five six six six seven seven seven';
+
+    @include desktop {
+      row-gap: 24px;
+      grid-template: 285px 307px 307px / repeat(8, 1fr);
+      grid-template-areas:
+        'one one two two three three three three'
+        'four four four four four six six six'
+        'seven seven seven five five five five five';
     }
 
-    &__title {
-        margin-bottom: 12px;
-        line-height: 1.292;
+    @include tablet {
+      row-gap: 0px;
+      grid-template: 300px 25px 300px 30px 307px 24px 300px / repeat(6, 1fr);
+      grid-template-areas:
+        'one one two two three three'
+        '. . . . . .'
+        'four four four four four four '
+        '. . . . . .'
+        'six six six seven seven seven '
+        '. . . . . .'
+        'five five five five five five';
+    }
 
+    // @include tablet {
+    //     grid-template: repeat(4, 300px) / repeat(6, 1fr);
+    //     grid-template-areas:
+    //         "one one two two three three"
+    //         "four four four four four four "
+    //         "six six six seven seven seven "
+    //         "five five five five five five";
+    // }
+
+    // Прости меня мой перфекционизм за этот кринж
+    // и за необходимость верстки Pixel Perfect
+    // в макете в котором разные отступы в одном блоке
+
+    @include mobile-s {
+      grid-template: 300px 25px 278px 25px 278px 23px 422px 26px 300px 25px 300px 25px 422px / 1fr;
+      grid-template-areas: 'one' '.' 'two' '.' 'three' '.' 'four' '.' 'six' '.' 'seven' '.' 'five';
+    }
+
+    // @include mobile-s {
+    //     row-gap: 0px;
+    //     grid-template: 300px 278px 278px 422px 300px 300px 422px / 1fr;
+    //     grid-template-areas: "one" "two" "three" "four" "six" "seven" "five";
+    // } Ммм, нормальная сетка
+  }
+
+  &__item {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &--1 {
+      grid-area: one;
+    }
+
+    &--2 {
+      grid-area: two;
+    }
+
+    &--3 {
+      grid-area: three;
+
+      p {
         @include mobile-s {
-            margin-bottom: 16px;
+          @include line-clamp(2);
         }
-    }
-    
-    &__list {
-        display: grid;
-        gap: 30px;
-        grid-template: 300px 300px / repeat(12, 1fr);
-        grid-template-areas:
-            "one one two two three three four four four four four four "
-            "five five five five five five six six six seven seven seven";
+      }
 
+      @include desktop {
+        img {
+          object-position: 0px -85px;
+        }
+      }
+
+      @include tablet {
+        img {
+          object-position: -29px 0px;
+        }
+      }
+
+      @include mobile-s {
+        img {
+          object-position: 0px 0px;
+        }
+      }
+    }
+
+    &--4 {
+      grid-area: four;
+      background: url(../images/projects/project-4.jpg);
+      background-position: 0px -85px;
+
+      time {
+        @include mobile {
+          margin-bottom: 7px;
+        }
+      }
+
+      h3 {
+        @include mobile {
+          margin-bottom: 9px;
+        }
+      }
+
+      p {
+        @include mobile-s {
+          margin-bottom: 16px;
+          line-height: 1.29;
+        }
+      }
+
+      @include desktop {
+        background-position: 0px -70px;
+      }
+
+      @include tablet {
+        background-position: 0px -116px;
+      }
+
+      @include mobile-s {
+        background-position: center;
+      }
+    }
+
+    &--5 {
+      grid-area: five;
+      background: url(../images/projects/project-5.jpg);
+      background-position: 0px -60px;
+
+      p {
+        @include mobile-s {
+          width: 200px;
+        }
+      }
+
+      @include desktop {
+        background-position: 0px -43px;
+      }
+
+      @include tablet {
+        background-position: 0px -88px;
+      }
+
+      @include mobile {
+        background-position: 0px 0px;
+      }
+
+      @media (max-width: 400px) {
+        background-position: -274px 0px;
+      }
+    }
+
+    &--6 {
+      grid-area: six;
+    }
+
+    &--7 {
+      grid-area: seven;
+    }
+
+    &--wide {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px 30px 30px 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: var(--color-light);
+
+      @include desktop {
+        padding: 30px;
+      }
+
+      @include mobile-s {
+        justify-content: flex-end;
+      }
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+    }
+
+    &-title {
+      max-width: 292px;
+      margin-bottom: 6px;
+      line-height: 1;
+
+      @include mobile-s {
+        font-size: 24px;
+      }
+    }
+
+    &-image {
+      margin-bottom: 18px;
+    }
+
+    &-description {
+      margin-bottom: auto;
+      line-height: 1.37;
+
+      @include line-clamp(3);
+
+      &--small {
         @include desktop {
-            row-gap: 24px;
-            grid-template: 285px 307px 307px / repeat(8, 1fr);
-            grid-template-areas:
-                "one one two two three three three three"
-                "four four four four four six six six"
-                "seven seven seven five five five five five";
+          @include line-clamp(2);
         }
 
         @include tablet {
-            row-gap: 0px;
-            grid-template: 300px 25px 300px 30px 307px 24px 300px/ repeat(6, 1fr);
-            grid-template-areas:
-                "one one two two three three"
-                ". . . . . ."
-                "four four four four four four "
-                ". . . . . ."
-                "six six six seven seven seven "
-                ". . . . . ."
-                "five five five five five five";
+          @include line-clamp(3);
         }
+      }
 
-        // @include tablet {
-        //     grid-template: repeat(4, 300px) / repeat(6, 1fr);
-        //     grid-template-areas:
-        //         "one one two two three three"
-        //         "four four four four four four "
-        //         "six six six seven seven seven "
-        //         "five five five five five five";
-        // }
+      &--wide {
+        max-width: 289px;
+        font-weight: 300;
 
-        // Прости меня мой перфекционизм за этот кринж
-        // и за необходимость верстки Pixel Perfect
-        // в макете в котором разные отступы в одном блоке
+        @include line-clamp(4);
 
         @include mobile-s {
-
-            grid-template: 300px 25px 278px 25px 278px 23px 422px 26px 300px 25px 300px 25px 422px / 1fr;
-            grid-template-areas: "one" "." "two" "." "three" "." "four" "." "six" "." "seven" "." "five";
+          margin-bottom: 20px;
+          font-size: 14px;
         }
+      }
 
-        // @include mobile-s {
-        //     row-gap: 0px;
-        //     grid-template: 300px 278px 278px 422px 300px 300px 422px / 1fr;
-        //     grid-template-areas: "one" "two" "three" "four" "six" "seven" "five";
-        // } Ммм, нормальная сетка
+      @include hover {
+        color: var(--color-accent);
+      }
+
+      &:focus {
+        background-color: var(--color-focus) !important;
+        outline: none;
+      }
     }
 
-    &__item {
-        img {
-            object-fit: cover;
-            width: 100%;
-        }
+    &-button {
+      margin-top: auto;
 
-        &--1 {
-            grid-area: one;
-
-        }
-
-        &--2 {
-            grid-area: two;
-
-        }
-
-        &--3 {
-            grid-area: three;
-
-            p {
-                @include mobile-s {
-                    @include line-clamp(2);
-                }
-            }
-
-            @include desktop {
-                img {
-                    object-position: 0px -85px;     
-                }
-            }
-
-            @include tablet {
-                img {
-                    object-position: -29px 0px;     
-                }
-            }
-
-            @include mobile-s {
-                img {
-                    object-position: 0px 0px;     
-                }
-            }
-        }
-
-        &--4 {
-            grid-area: four;
-            background: url(../images/projects/project-4.jpg);
-            background-position: 0px -85px;
-
-            time {
-
-                @include mobile {
-                    margin-bottom: 7px;
-                }
-            }
-
-            h3 {
-                @include mobile {
-                    margin-bottom: 9px;
-                }
-            }
-
-            p {
-                @include mobile-s {
-                    margin-bottom: 16px;
-                    line-height: 1.29;
-                }
-            }
-
-            @include desktop {
-                background-position: 0px -70px;
-            }
-
-            @include tablet {
-                background-position: 0px -116px;
-            }
-
-            @include mobile-s {
-                background-position: center;
-            }
-        }
-
-        &--5 {
-            grid-area: five;
-            background: url(../images/projects/project-5.jpg);
-            background-position: 0px -60px;
-
-            p {
-                @include mobile-s {
-                    width: 200px;
-                }
-            }
-
-            @include desktop {
-                background-position: 0px -43px;
-            }
-
-            @include tablet {
-                background-position: 0px -88px;
-            }
-
-            @include mobile {
-                background-position: 0px 0px;
-            }
-
-            @media (max-width:400px) {
-                background-position: -274px 0px;
-            }
-        }
-
-        &--6 {
-            grid-area: six;
-        }
-
-        &--7 {
-            grid-area: seven;
-        }
-
-        &--wide {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 22px 30px 30px 30px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: var(--color-light);
-
-            @include desktop {
-                padding: 30px;
-            }
-
-            @include mobile-s {
-                justify-content: flex-end;
-            }
-        }
-
-        &-inner {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            height: 100%;
-        }
-
-        &-title {
-            max-width: 292px;
-            margin-bottom: 6px;
-            line-height: 1;
-            
-            @include mobile-s {
-                font-size: 24px;
-            }
-        }
-
-        &-image {
-            margin-bottom: 18px;
-        }
-
-        &-description {
-            margin-bottom: auto;
-            line-height: 1.37;
-
-            @include line-clamp(3);
-
-            &--small {
-                @include desktop {
-                    @include line-clamp(2);
-                }
-
-                @include tablet {
-                    @include line-clamp(3);
-                }
-            }
-
-            &--wide {
-                max-width: 289px;
-                font-weight: 300;
-
-                @include line-clamp(4);
-
-                @include mobile-s {
-                    margin-bottom: 20px;
-                    font-size: 14px;
-                }
-            }
-
-            @include hover {
-                color: var(--color-accent);
-            }
-
-            &:focus {
-                background-color: var(--color-focus) !important;
-                outline: none;
-            }
-        }
-
-        &-button {
-            margin-top: auto;
-
-            @include mobile-s {
-                margin-top: 0;
-            }
-        }
-
-        &-time {
-            display: flex;
-            align-items: center;
-            column-gap: 4px;
-            height: 22px;
-            font-size: 12px;
-            line-height: 1;
-            color: var(--color-gray-dark);
-
-            &::before {
-                content: "";
-                display: inline-block;
-                background-image: url(../images/icons/calendar-gray.svg);
-                background-repeat: no-repeat;
-                
-                @include square(14px);
-            }
-
-            &--white {
-                margin-bottom: 2px;
-                color: var(--color-light);
-
-                @include mobile-s {
-                    margin-bottom: 6px;
-                }
-
-                &::before {
-                    background-image: url(../images/icons/calendar.svg);
-                }
-            }
-        }
+      @include mobile-s {
+        margin-top: 0;
+      }
     }
+
+    &-time {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      height: 22px;
+      font-size: 12px;
+      line-height: 1;
+      color: var(--color-gray-dark);
+
+      &::before {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/icons/calendar-gray.svg);
+        background-repeat: no-repeat;
+
+        @include square(14px);
+      }
+
+      &--white {
+        margin-bottom: 2px;
+        color: var(--color-light);
+
+        @include mobile-s {
+          margin-bottom: 6px;
+        }
+
+        &::before {
+          background-image: url(../images/icons/calendar.svg);
+        }
+      }
+    }
+  }
 }

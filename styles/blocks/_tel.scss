@@ -1,26 +1,25 @@
 .tel {
-    display: flex;
-    align-items: center;
-    column-gap: 3px;
-    height: 18px;
-    margin-top: auto;
-    font-weight: 500;
-    line-height: 1;
-    color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+  height: 18px;
+  margin-top: auto;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-accent);
 
-    &::before {
-        content: "";
-        display: inline-block;
-        background-image: url(../images/icons/tel.svg);
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../images/icons/tel.svg);
 
-        @include square(15px);
-    }
+    @include square(15px);
+  }
 
-        &::before {
-            background-repeat: no-repeat;
-            
-            @include flex-center;
-            @include square(16.5px);
-        }
-    }
+  &::before {
+    background-repeat: no-repeat;
 
+    @include flex-center;
+    @include square(16.5px);
+  }
+}

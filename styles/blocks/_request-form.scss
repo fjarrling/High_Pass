@@ -1,69 +1,69 @@
 .request-form {
-    &__title {
-        font-weight: 400;
-        line-height: 0.92;
-        margin-top: -6px;
-        margin-bottom: 5px;
-
-        @include tablet {
-            margin-top: 0px;
-        }
-
-        @include mobile-s {
-            font-size: 18px;
-            line-height: 1.22;
-            margin-bottom: 7px;
-        }
-    }
-
-    &__description {
-        max-width: 370px;
-        margin-bottom: 14px;
-        line-height: 1.37;
-        color: var(--color-gray-dark);
-
-        @include tablet {
-            max-width: 100%;
-            margin-bottom: 14px;
-        }
-
-        @include mobile-s {
-            margin-bottom: 16px;
-            font-size: 14px;
-            line-height: 1.29;
-        }
-    }
-
-    &-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 100%;
-    }
-
-    &__input {
-        width: 100%;
-        margin-bottom: 20px;
-
-        color: var(--color-white);
-        background-color: var(--color-gray-light);
-
-        &--comment {
-            height: 150px;
-        }
-
-        @include desktop {
-        }
-
-        @include mobile {
-        }
-
-        &::placeholder {
-            color: var(--color-gray-dark);
-        }
-    }
+  &__title {
+    font-weight: 400;
+    line-height: 0.92;
+    margin-top: -6px;
+    margin-bottom: 5px;
 
     @include tablet {
-        max-width: 466px;
+      margin-top: 0px;
     }
+
+    @include mobile-s {
+      font-size: 18px;
+      line-height: 1.22;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__description {
+    max-width: 370px;
+    margin-bottom: 14px;
+    line-height: 1.37;
+    color: var(--color-gray-dark);
+
+    @include tablet {
+      max-width: 100%;
+      margin-bottom: 14px;
+    }
+
+    @include mobile-s {
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 20px;
+
+    color: var(--color-white);
+    background-color: var(--color-gray-light);
+
+    &--comment {
+      height: 150px;
+    }
+
+    @include desktop {
+    }
+
+    @include mobile {
+    }
+
+    &::placeholder {
+      color: var(--color-gray-dark);
+    }
+  }
+
+  @include tablet {
+    max-width: 466px;
+  }
 }

@@ -1,29 +1,29 @@
 .input {
-    height: var(--button-height);
-    padding: 15px 23px;
-    border: none;
+  height: var(--button-height);
+  padding: 15px 23px;
+  border: none;
 
-    &--textarea {
-        line-height: 1.29;
+  &--textarea {
+    line-height: 1.29;
+  }
+
+  @include mobile-s {
+    --button-height: 40px;
+
+    padding: 12px 23px;
+
+    &::placeholder {
+      font-size: 14px;
     }
+  }
 
-    @include mobile-s {
-        --button-height: 40px;
-        
-        padding: 12px 23px;
-
-        &::placeholder {
-            font-size: 14px;
-        }
+  @include hover {
+    &::placeholder {
+      color: var(--color-accent);
     }
+  }
 
-    @include hover {
-        &::placeholder {
-            color: var(--color-accent);
-        }
-    }
-
-    &:focus {
-        outline: 1px solid var(--color-accent);
-    }
-} 
+  &:focus {
+    outline: 1px solid var(--color-accent);
+  }
+}

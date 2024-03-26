@@ -1,10 +1,10 @@
 body {
-    font-size: 16px;
-    font-family: var(--font-family-base);
-    font-weight: 400;
-    line-height: 1.75;
-    color: var(--color-dark);
-    background-color: var(--color-light);
+  font-size: 16px;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 a,
@@ -14,21 +14,21 @@ textarea,
 img,
 ::placeholder,
 svg * {
-    transition-duration: var(--transition-duration);
+  transition-duration: var(--transition-duration);
 }
 
 a {
-    @include reset-link;
+  @include reset-link;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "TTFirsNeue", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
+  font-family: 'TTFirsNeue', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 
-    @include mobile-s {
-        font-size: 18px;
-    }
+  @include mobile-s {
+    font-size: 18px;
+  }
 }

@@ -1,85 +1,84 @@
 .about {
-    color: var(--color-light);
+  color: var(--color-light);
 
-    &__container {
-        padding-block: 30px 70px;
-        background-color: var(--color-dark);
+  &__container {
+    padding-block: 30px 70px;
+    background-color: var(--color-dark);
 
-        @include desktop {
-            padding-block: 30px 82px;
-        }
-
-        @include tablet {
-            padding-block: 32px 62px;
-        }
-
-        @include mobile-s {
-            padding-block: 32px 60px;
-        }
+    @include desktop {
+      padding-block: 30px 82px;
     }
 
-    &__body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
-
-        @include mobile-s {
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-        }
+    @include tablet {
+      padding-block: 32px 62px;
     }
 
-    &__title {
-        margin-bottom: 5px;
-        line-height: 1.292;
+    @include mobile-s {
+      padding-block: 32px 60px;
+    }
+  }
 
-        @include tablet {
-            margin-bottom: 3px;
-        }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    @include mobile-s {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    line-height: 1.292;
+
+    @include tablet {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__text {
+    color: var(--color-gray);
+
+    @include mobile {
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 1.79;
+    }
+  }
+
+  &__content {
+    margin-block: -3px -1px;
+
+    @include mobile-s {
+      margin-block: -1px 0px;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: 0px -81px;
+    margin-bottom: 25px;
+
+    @include desktop {
+      object-position: -16px 0px;
+      height: 332px;
+      margin-bottom: 24px;
     }
 
-    &__text {
-        color: var(--color-gray);
-
-        @include mobile {
-            margin-bottom: 13px;
-            font-size: 14px;
-            line-height: 1.79;
-        }
+    @include tablet {
+      object-position: -255px 0px;
+      height: 569px;
     }
 
-    &__content {
-        margin-block: -3px -1px;
-
-        @include mobile-s {
-            margin-block: -1px 0px;
-        }
+    @include mobile-s {
+      object-position: -70px 0px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      margin-bottom: 26px;
     }
-
-    &__image {
-        object-fit: cover;
-        object-position: 0px -81px;
-        margin-bottom: 25px;
-
-        @include desktop {
-            object-position: -16px 0px;
-            height: 332px;
-            margin-bottom: 24px;
-        }
-
-        @include tablet {
-            object-position: -255px 0px;
-            height: 569px;
-        }
-
-        @include mobile-s {
-            object-position: -70px 0px;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1;
-            margin-bottom: 26px;
-
-        }
-    }
+  }
 }

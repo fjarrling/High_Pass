@@ -1,112 +1,108 @@
 .footer {
+  background-color: var(--color-dark);
 
-    background-color: var(--color-dark);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 106px;
+    padding-top: 24px;
 
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        height: 106px;
-        padding-top: 24px;
+    @include mobile-s {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 185px;
+      padding: 0px;
+    }
+  }
 
+  &__logo {
+    color: var(--color-gray-light);
+    font-family: var(--font-family-alternate);
+    font-size: 14px;
 
-        @include mobile-s {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            height: 185px;
-            padding: 0px;
-        }
+    img {
+      margin-bottom: 5px;
+
+      @include desktop {
+        margin-top: 6px;
+        margin-bottom: 2px;
+      }
+
+      @include tablet {
+        margin-top: 6px;
+        margin-bottom: 4px;
+      }
+
+      @include mobile-s {
+        margin: 0px;
+      }
     }
 
-    &__logo {
+    @include mobile-s {
+      width: 100%;
+      padding-block: 14px 12px;
+      font-size: 10px;
+      background-color: var(--color-dark-alt);
 
-        color: var(--color-gray-light);
-        font-family: var(--font-family-alternate);
-        font-size: 14px;
+      @include flex-center;
+      flex-direction: column;
+    }
+  }
 
-        img {
-            margin-bottom: 5px;
+  &__copyright {
+    width: 360px;
+    margin-left: auto;
+    line-height: 1.37;
+    color: var(--color-gray);
 
-            @include desktop {
-                margin-top: 6px;
-                margin-bottom: 2px;
-            }
+    @include tablet {
+      display: none;
+    }
+  }
 
-            @include tablet {
-                margin-top: 6px;
-                margin-bottom: 4px;
-            }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 162px;
+    margin-left: 330px;
+    color: var(--color-gray);
 
-            @include mobile-s {
-                margin: 0px;
-            }
-
-        }
-
-        @include mobile-s {
-            width: 100%;
-            padding-block: 14px 12px;
-            font-size: 10px;
-            background-color: var(--color-dark-alt);
-
-            @include flex-center;
-            flex-direction: column;
-        }
+    &-wrapper {
+      display: flex;
+      column-gap: 20px;
+      height: 30px;
     }
 
-    &__copyright {
-        width: 360px;
-        margin-left: auto;
-        line-height: 1.37;
-        color: var(--color-gray);
-
-        @include tablet {
-            display: none;
-        }
+    &-title {
+      margin-bottom: 8px;
+      line-height: 1.37;
+      font-weight: 400;
     }
 
-    &__socials {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 162px;
-        margin-left: 330px;
-        color: var(--color-gray);
+    &-icon {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
 
-        &-wrapper {
-            display: flex;
-            column-gap: 20px;
-            height: 30px;
-        }
+      @include hover {
+        color: var(--color-accent);
+      }
 
-        &-title {
-            margin-bottom: 8px;
-            line-height: 1.37;
-            font-weight: 400;
-        }
-
-        &-icon {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-
-            @include hover {
-                color: var(--color-accent);
-            }
-
-            &:focus {
-                color: var(--color-focus);
-                outline: none; 
-            }
-        }
-
-        @include desktop {
-            margin-left: 70px;
-        }
-
-        @include mobile-s {
-            margin: 0;
-            padding-block: 31px 32px;
-        }
+      &:focus {
+        color: var(--color-focus);
+        outline: none;
+      }
     }
+
+    @include desktop {
+      margin-left: 70px;
+    }
+
+    @include mobile-s {
+      margin: 0;
+      padding-block: 31px 32px;
+    }
+  }
 }

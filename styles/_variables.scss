@@ -1,23 +1,23 @@
 :root {
-    --color-dark: #202020;
-    --color-dark-alt: #4A4A4A;
-    --color-light: #FFFFFF;
-    --color-accent: #FF6E30;
-    --color-active: #CE4307;
-    --color-focus: #BC572B;
-    --color-gray: #CACACA;
-    --color-gray-light: #E9E9E9;
-    --color-gray-dark: #999999;
+  --color-dark: #202020;
+  --color-dark-alt: #4a4a4a;
+  --color-light: #ffffff;
+  --color-accent: #ff6e30;
+  --color-active: #ce4307;
+  --color-focus: #bc572b;
+  --color-gray: #cacaca;
+  --color-gray-light: #e9e9e9;
+  --color-gray-dark: #999999;
 
-    --border-secondary: 3px solid var(--color-accent);
-    
-    --font-family-base: 'Roboto', sans-serif;
-    --font-family-alternate: 'TTFirsNeue', sans-serif;
+  --border-secondary: 3px solid var(--color-accent);
 
-    --container-width: 1290px;
-    --container-padding-x: 31px; 
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-alternate: 'TTFirsNeue', sans-serif;
 
-    --button-height: 50px;
+  --container-width: 1290px;
+  --container-padding-x: 31px;
 
-    --transition-duration: 0.2s;
+  --button-height: 50px;
+
+  --transition-duration: 0.2s;
 }

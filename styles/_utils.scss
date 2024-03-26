@@ -1,105 +1,105 @@
 .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
 
-    @include tablet {
-        --container-padding-x: 27px;
-    }
+  @include tablet {
+    --container-padding-x: 27px;
+  }
 
-    @include mobile {
-        --container-padding-x: 21px;
-    }
+  @include mobile {
+    --container-padding-x: 21px;
+  }
 }
 
 .card-category {
-    position: relative;
+  position: relative;
 
-    &::after {
-        @include flex-center;
+  &::after {
+    @include flex-center;
 
-        content: attr(data-title);
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        height: 30px;
-        width: 123px;
-        padding: 7px 15px 7px 14px;
-        font-size: 14px;
-        line-height: 1.5;
-        color: var(--color-light);
-        background-color: var(--color-dark);
+    content: attr(data-title);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    width: 123px;
+    padding: 7px 15px 7px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-light);
+    background-color: var(--color-dark);
 
-        @include mobile-s {
-            top: 6px;
-            right: 5px;
-            height: 22px;
-            width: 95px;
-            padding: 4px 7px;
-            font-size: 12px;
-        }
+    @include mobile-s {
+      top: 6px;
+      right: 5px;
+      height: 22px;
+      width: 95px;
+      padding: 4px 7px;
+      font-size: 12px;
+    }
+  }
+
+  &--lowp::after {
+    top: 7px;
+    right: 7px;
+    width: auto;
+    height: 28px;
+    padding: 6px 14px;
+
+    @include desktop {
+      right: 8px;
     }
 
-    &--lowp::after {
-        top: 7px;
-        right: 7px;
-        width: auto;
-        height: 28px;
-        padding: 6px 14px;
-
-        @include desktop {
-            right: 8px;
-        }
-
-        @include tablet {
-            right: 7px;
-        }
-
-        @include mobile-s {
-            top: 5px;
-            right: 5px;
-            width: auto;
-            height: 22px;
-            padding: 4px 14px;
-        }
+    @include tablet {
+      right: 7px;
     }
+
+    @include mobile-s {
+      top: 5px;
+      right: 5px;
+      width: auto;
+      height: 22px;
+      padding: 4px 14px;
+    }
+  }
 }
 
 .visually-hidden {
-    @include visually-hidden;
+  @include visually-hidden;
 }
 
 .hidden-tablet {
-    @include tablet {
-        display: none !important;
-    }
+  @include tablet {
+    display: none !important;
+  }
 }
 
 .visible-tablet {
-    @include tablet-above {
-        display: none !important;
-    }
+  @include tablet-above {
+    display: none !important;
+  }
 }
 
 .hidden-mobile {
-    @include mobile {
-        display: none !important;
-    }
+  @include mobile {
+    display: none !important;
+  }
 }
 
 .visible-mobile {
-    @include mobile-above {
-        display: none !important;
-    }
+  @include mobile-above {
+    display: none !important;
+  }
 }
 .hidden-mobile-s {
-    @include mobile-s {
-        display: none !important;
-    }
+  @include mobile-s {
+    display: none !important;
+  }
 }
 
 .visible-mobile-s {
-    @include mobile-s-above {
-        display: none !important;
-    }
+  @include mobile-s-above {
+    display: none !important;
+  }
 }

@@ -1,220 +1,218 @@
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  @include mobile-s {
+    display: flex;
+    flex-direction: column;
+    row-gap: 34px;
+  }
+
+  &__container {
+    padding-block: 41px 68px;
+
+    @include desktop {
+      padding-block: 34px 68px;
+    }
 
     @include mobile-s {
-        display: flex;
-        flex-direction: column;
-        row-gap: 34px;
+      padding-block: 30px 50px;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    background-image: url(../images/hero-banner-bg.jpg);
+    background-position: 0px -172px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.04;
+    color: var(--color-light);
+
+    @include desktop {
+      background-position: 0px -33px;
     }
 
-    &__container {
-        padding-block: 41px 68px;
-
-        @include desktop {
-            padding-block: 34px 68px;
-        }
-
-        @include mobile-s {
-            padding-block: 30px 50px;
-        }
+    @include tablet {
+      background-position: 0px -50px;
+      margin-top: 2px;
     }
 
-    &__banner {
-        display: flex;
-        background-image: url(../images/hero-banner-bg.jpg);
-        background-position: 0px -172px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        line-height: 1.04;
-        color: var(--color-light);
-        
+    @include mobile {
+      background-position: -4px 0px;
+      margin-top: 0px;
+    }
 
+    @include mobile-s {
+      min-height: 422px;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: auto;
+      padding: 60px;
+
+      @include desktop {
+        padding: 30px;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 3px;
+      line-height: 1;
+
+      @include desktop {
+        margin-bottom: 9px;
+      }
+
+      @include tablet {
+        margin-bottom: 14px;
+      }
+
+      @include mobile-s {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 19px;
+      font-size: 36px;
+
+      @include desktop {
+        margin-bottom: 22px;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      @include tablet {
+        margin-bottom: 23px;
+        font-size: 34px;
+        line-height: 0.91;
+      }
+
+      @include mobile {
+        margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 1.1;
+      }
+    }
+
+    &-button {
+      width: 159px;
+
+      @include mobile-s {
+        width: 145px;
+      }
+    }
+  }
+
+  &__photos {
+    &-title {
+      margin-bottom: 18px;
+      line-height: 1.04;
+
+      @include desktop {
+        margin-bottom: 25px;
+      }
+
+      @include tablet {
+        margin-bottom: 17px;
+        font-size: 22px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+
+      @include mobile-s {
+        height: 38px;
+        margin-bottom: 16px;
+        font-size: 18px;
+      }
+    }
+
+    &-list {
+      display: grid;
+      grid-template: 300px 257px / 1fr 1fr;
+      gap: 30px;
+
+      @include desktop {
+        grid-template: 332px 186px / 1fr 1fr;
+      }
+
+      @include tablet {
+        grid-template: 228px 133px / 1fr 1fr;
+      }
+
+      @include mobile-s {
+        grid-template: 186px 105px / 1fr 1fr;
+      }
+    }
+
+    &-item {
+      &--1 {
+        grid-column: -1 / 1;
+      }
+    }
+
+    &-image {
+      object-fit: cover;
+
+      &--1 {
         @include desktop {
-            background-position: 0px -33px;
+          height: 332px;
+          object-position: 0px 0px;
         }
 
         @include tablet {
-            background-position: 0px -50px;
-            margin-top: 2px;
-        }
-
-        @include mobile {
-            background-position: -4px 0px;
-            margin-top: 0px;
+          height: 228px;
         }
 
         @include mobile-s {
-            min-height: 422px;
+          height: 186px;
+        }
+      }
+
+      &--2 {
+        object-position: 0 -127px;
+
+        @include desktop {
+          height: 186px;
+          object-position: 0px -70px;
         }
 
-        &-body {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: auto;
-            padding: 60px;
-
-            @include desktop {
-                padding: 30px;
-            }
+        @include tablet {
+          height: 133px;
+          object-position: 0px -50px;
         }
 
-        &-subtitle {
-            margin-bottom: 3px;
-            line-height: 1;
+        @include mobile-s {
+          height: 105px;
+          object-position: 0px -41px;
+        }
+      }
 
-            @include desktop {
-                margin-bottom: 9px;
-            }
-
-            @include tablet {
-                margin-bottom: 14px;
-            }
-
-            @include mobile-s {
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
+      &--3 {
+        @include desktop {
+          height: 186px;
         }
 
-        &-title {
-            margin-bottom: 19px;
-            font-size: 36px;
-
-            @include desktop {
-                margin-bottom: 22px;
-                font-size: 34px;
-                line-height: 1;
-            }
-
-            @include tablet {
-                margin-bottom: 23px;
-                font-size: 34px;
-                line-height: 0.91;
-            }
-
-            @include mobile {
-                margin-bottom: 14px;
-                font-size: 24px;
-                line-height: 1.1;
-            }
+        @include tablet {
+          height: 133px;
         }
 
-        &-button {
-            width: 159px;
-
-            @include mobile-s {
-                width: 145px;
-            }
+        @include mobile-s {
+          height: 105px;
         }
+      }
+
+      @include hover {
+        transform: scale(1.05);
+      }
     }
-
-    &__photos {
-        &-title {
-            margin-bottom: 18px;
-            line-height: 1.04;
-
-            @include desktop {
-                margin-bottom: 25px;
-            }
-
-            @include tablet {
-                margin-bottom: 17px;
-                font-size: 22px;
-            }
-
-            @include mobile {
-                font-size: 16px;
-            }
-
-            @include mobile-s {
-                height: 38px;
-                margin-bottom: 16px;
-                font-size: 18px;
-            }
-        }
-
-        &-list {
-            display: grid;
-            grid-template: 300px 257px / 1fr 1fr;
-            gap: 30px;
-
-            @include desktop {
-                grid-template: 332px 186px / 1fr 1fr;
-            }
-
-            @include tablet {
-                grid-template: 228px 133px / 1fr 1fr;
-            }
-
-            @include mobile-s {
-                grid-template: 186px 105px / 1fr 1fr;
-            }
-        }
-
-        &-item {
-            &--1 {
-                grid-column: -1 / 1;
-            }
-        }
-
-        &-image {
-            object-fit: cover;
-
-            &--1 {
-
-                @include desktop {
-                    height: 332px;
-                    object-position: 0px 0px;
-                }
-
-                @include tablet {
-                    height: 228px;
-                }
-
-                @include mobile-s {
-                    height: 186px;
-                }
-            }
-
-            &--2 {
-                object-position: 0 -127px;
-
-                @include desktop {
-                    height: 186px;
-                    object-position: 0px -70px;
-                }
-
-                @include tablet {
-                    height: 133px;
-                    object-position: 0px -50px;
-                }
-
-                @include mobile-s {
-                    height: 105px;
-                    object-position: 0px -41px;
-                }
-            }
-
-            &--3 {
-                @include desktop {
-                    height: 186px;
-                }
-
-                @include tablet {
-                    height: 133px;
-                }
-
-                @include mobile-s {
-                    height: 105px;
-                }
-            }
-
-            @include hover {
-                transform: scale(1.05);
-            }
-        }
-    }
+  }
 }
